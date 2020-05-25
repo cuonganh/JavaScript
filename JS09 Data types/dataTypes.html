@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p id="demo"></p>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS09 Data types</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        /*Data types:
+            primitives: string, number, boolean, undefinded
+            
+            object, array, function
+        */
+
+        var x = 100;
+        var name = "JavaScript";
+        var isWeekend = true;
+
+        //number
+        100;
+        3.1415;
+
+        //string
+        'holahola';
+        "halohalo";
+
+        //boolean
+        true; 
+        false;
+
+        //undefinded
+        var tmp;
+
+        //object
+        var someThing = null;
+        var person ={
+            name: "Java",
+            age: 18,
+            salary: 1000
+        }
+
+        //function
+        var func = function add(a, b){
+            return a + b;
+        }
+
+        //array
+        var arr = ['apple', 'banana', 'chily'];
+
+        //typeOf
+        // document.getElementById("demo").innerHTML = "Data type of '100' variabe: " + typeof 100;
+        // document.getElementById("demo").innerHTML = "Data type of 'holahola' variabe: " + typeof "holahola";
+        // document.getElementById("demo").innerHTML = "Data type of 'person' variabe: " + typeof person;
+        // document.getElementById("demo").innerHTML = "Data type of 'someThing' variabe: " + typeof someThing;
+        // document.getElementById("demo").innerHTML = "Data type of 'func' variabe :" + typeof func;
+        // document.getElementById("demo").innerHTML = "Data type of 'arr' variabe :" + typeof arr;
+        // document.getElementById("demo").innerHTML = 'Data type of "": ' + typeof "";
+        document.getElementById("demo").innerHTML = 'Data type of "true": ' + typeof true;
+    </script>
+</body>
+</html>

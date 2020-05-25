@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS10 Function</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="person1"></p>
+    <p id="person2"></p>
+    <script>
+        //Function in JavaScript
+        /*
+            function functionName(parameters list){
+                //function body
+            }
+        */
+
+        var a = 15, b = 11;
+        var msg1 = "Hello", msg2 = "Goodbye";
+        var name1 = "Java", name2 = "Script";
+
+        var sum = sumOfAAndB(a, b);
+        function sumOfAAndB(a, b){
+            return a + b;
+        }
+
+        function sumOfArray(start, end){
+            var sum = 0;
+            for (var i = start; i <= end; i++){
+                sum = sum + i;
+            }
+            return sum;
+        }
+
+        function sayHello(msg, name){
+            var message = msg + " " + name + "!";
+            return message;
+        }
+        
+        // document.getElementById("sum").innerHTML = sum;
+        document.getElementById("sum").innerHTML = sumOfArray(1, 100);
+        document.getElementById("person1").innerHTML = sayHello(msg1, name1);
+        document.getElementById("person2").innerHTML = sayHello(msg2, name2);
+    </script>
+</body>
+</html>

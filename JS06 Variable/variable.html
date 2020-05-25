@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS06 Variable</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        //Variable in JS
+        var name = "Java Script";
+        var firstName, lastName;
+        firstName = "Java";
+        lastName = "Script";       
+        var pi = 3.1415926535898;
+        var correct = true;
+
+        var tmp = false;
+        alert("tmp1 = " + tmp);
+        tmp = pi;
+        alert("tmp2 = " + tmp);
+
+        function test(){
+            document.getElementById('demo').innerHTML = firstName + " " + lastName;
+        }
+    </script>
+    <button onclick="test()">Click to see result</button>
+    <p id="demo"></p>
+</body>
+</html>

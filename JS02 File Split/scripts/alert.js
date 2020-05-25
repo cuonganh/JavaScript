@@ -1,0 +1,1 @@
+alert("Bài 2 rồi nhé!");
